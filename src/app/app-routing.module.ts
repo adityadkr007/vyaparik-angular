@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: '/dashboard/home',
+    redirectTo: '/public/landing',
   },
 
   {
@@ -19,9 +19,14 @@ const routes: Routes = [
     component: AuthLayoutComponent,
   },
   {
+    path: 'public',
+    loadChildren: () =>
+      import('./features/public/public.module').then((m) => m.PublicModule),
+  },
+  {
     path: '*',
     redirectTo: '/dashboard/home',
-  }
+  },
 ];
 
 @NgModule({

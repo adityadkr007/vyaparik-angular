@@ -4,11 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build-dev": "ng build",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:Vyaparik": "node dist/vyaparik/server/server.mjs",
-    "vercel-build": "npm run build:ssr"
+    "serve:ssr:Vyaparik": "node dist/vyaparik/server/server.mjs"
   },
   "private": true,
   "dependencies": {

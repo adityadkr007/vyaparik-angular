@@ -1,4 +1,4 @@
-<div class="container text-center mt-5">
+<!-- <div class="container text-center mt-5">
     <h1 class="display-3">Vyaparik</h1>
     <p class="lead">Something amazing is coming soon. Stay tuned!</p>
   
@@ -9,11 +9,190 @@
     ></ngb-progressbar>
   
     <div class="mt-4">
-      <!-- <button class="btn btn-primary" (click)="subscribe()">Notify Me</button> -->
+      <button class="btn btn-primary" (click)="subscribe()">Notify Me</button>
     </div>
   
     <footer class="mt-5 text-muted">
       &copy; 2025 Vyaparik. All rights reserved.
     </footer>
   </div>
-  
+   -->
+
+<nav id="home">
+  <div class="container">
+    <div class="nav-container flex">
+      <a class="logo">
+        <img src="img/logo.png" alt="" />
+      </a>
+
+      <div class="menu">
+        <ul class="nav-list flex">
+          <li class="nav-item" (click)="scrollToSection('home')">Home</li>
+          <li class="nav-item" (click)="scrollToSection('product')">
+            <a href="#"></a>Products
+          </li>
+
+          <li class="nav-item" (click)="scrollToSection('pricing')">Pricing</li>
+          <li class="nav-item" (click)="scrollToSection('contact')">Contact</li>
+          <li class="nav-item">
+            <a href="#" class="primary-button">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="secondary-button">Register</a>
+          </li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" id="menu-btn"></i>
+    </div>
+  </div>
+</nav>
+<section class="header-section">
+  <div class="container header flex">
+    <h1>Contact Forms for Modern Websites</h1>
+    <p>
+      Receive your html contact form submissions directly in your email inbox
+      using our contact form api service without any server or backend code. Its
+      free!
+    </p>
+    <p class="steps-numbering"><strong>1</strong></p>
+    <h4>Generate Your Access Key</h4>
+    <input type="text" placeholder="Your Email" name="" id="" class="email-i" />
+    <a class="primary-button">Get Your Access Key</a>
+    <small>No Signup Required</small>
+
+    <p class="steps-numbering"><strong>2</strong></p>
+    <h4>Create a contact form</h4>
+    <div class="code-editor">
+      <div class="editor-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <pre><code>
+      &lt;form action="https://api.vyparik.com/submit" method="POST"&gt;
+        &lt;input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" /&gt;
+        &lt;input type="text" name="name" placeholder="Your Name" required /&gt;
+        &lt;input type="email" name="email" placeholder="Your Email" required /&gt;
+        &lt;textarea name="message" placeholder="Your Message" required&gt;&lt;/textarea&gt;
+        &lt;button type="submit"&gt;Send&lt;/button&gt;
+      &lt;/form&gt;
+      </code></pre>
+    </div>
+
+    <p class="steps-numbering"><strong>3</strong></p>
+    <h4>Replace "YOUR_ACCESS_KEY_HERE" with your access key</h4>
+    <div class="code-editor">
+      <div class="editor-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <pre><code>
+     
+        &lt;input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" /&gt;
+        
+      </code></pre>
+    </div>
+  </div>
+</section>
+<section class="how-it-works">
+  <div class="container">
+    <h2 class="text-center mb-5 section-heading">How It Works</h2>
+    <div class="row text-center">
+      <!-- Step 1 -->
+      <div class="col-md-4 mb-3">
+        <div class="step-card">
+          <i class="fas fa-file-code step-icon"></i>
+          <h4>Copy the Form Code</h4>
+          <p>Get the ready-to-use form code and add it to your website.</p>
+        </div>
+      </div>
+      <!-- Step 2 -->
+      <div class="col-md-4 mb-3">
+        <div class="step-card">
+          <i class="fas fa-paper-plane step-icon"></i>
+          <h4>Submit the Form</h4>
+          <p>Users fill out the form and submit their details securely.</p>
+        </div>
+      </div>
+      <!-- Step 3 -->
+      <div class="col-md-4 mb-3">
+        <div class="step-card">
+          <i class="fas fa-envelope step-icon"></i>
+          <h4>Receive the Data</h4>
+          <p>Get form responses directly in your email inbox instantly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="product" class="product-container">
+  <div class="container">
+    <h1 class="section-heading">Our Products</h1>
+    <div class="products flex">
+      <div class="product-card flex">
+        <div>
+          <i class="fa fa-envelope fa-5x"></i>
+        </div>
+        <h4>Serverless Emails</h4>
+        <p>Handle all your emails with no backend configurations</p>
+      </div>
+      <div class="product-card flex">
+        <div>
+          <i class="fa fa-cogs fa-5x"></i>
+        </div>
+        <h4>Custom Web App Development</h4>
+        <p>
+          Upgrade your business with our custom websites and business solutions
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="container">
+    <h2 class="text-center section-heading mb-4">Our Pricing Plans</h2>
+    <div class="pricing-container flex">
+      <!-- Basic Plan -->
+
+      <div class="card pricing-card text-center p-4 border-black">
+        <h3 class="card-title">Basic</h3>
+        <h4 class="text-primary">$10/month</h4>
+        <p class="card-text">
+          ✔ 10 Emails per Day<br />✔ Basic Analytics<br />✔ Community Support
+        </p>
+        <a href="#" class="primary-button">Choose Plan</a>
+      </div>
+
+      <!-- Pro Plan -->
+
+      <div class="card pricing-card text-center p-4 border-black">
+        <h3 class="card-title">Pro</h3>
+        <h4 class="text-success">$25/month</h4>
+        <p class="card-text">
+          ✔ 100 Emails per Day<br />✔ Advanced Analytics<br />✔ Priority Support
+        </p>
+        <a href="#" class="primary-button">Choose Plan</a>
+      </div>
+
+      <!-- Enterprise Plan -->
+
+      <div class="card pricing-card text-center p-4 border-black">
+        <h3 class="card-title">Enterprise</h3>
+        <h4 class="text-danger">$50/month</h4>
+        <p class="card-text">
+          ✔ Unlimited Emails<br />✔ Premium Analytics<br />✔ 24/7 Dedicated
+          Support
+        </p>
+        <a href="#" class="primary-button">Choose Plan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-section">
+    <span>Copyright © 2025. Vyaparik</span>
+  </div>
+</footer>

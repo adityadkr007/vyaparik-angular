@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "public": true,
+    "name": "Vyaparik",
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/api"
+      }
+    ],
+    "functions": {
+      "api/index.js": {
+        "includeFiles": "dist/vyaparik/**"
+      }
+    }
+  }
+  
+  
